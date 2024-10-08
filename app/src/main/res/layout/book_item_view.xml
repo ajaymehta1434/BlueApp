@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_32"
+        android:layout_marginVertical="@dimen/dp_3"
+        android:padding="@dimen/dp_5"
+        android:background="@drawable/bg_book_item">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivBookItemCover"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_margin="@dimen/dp_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBookTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            tools:text="@string/dummy_book_name"
+            android:inputType="textNoSuggestions"
+            android:theme="@style/TextAppearance.App.Title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivBookItemCover"
+            app:layout_constraintTop_toTopOf="@+id/ivBookItemCover" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBookAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:inputType="textMultiLine|textNoSuggestions"
+            tools:text="@string/dummy_book_author"
+            android:theme="@style/TextAppearance.App.Subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvBookTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvBookTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

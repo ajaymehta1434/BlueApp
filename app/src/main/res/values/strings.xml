@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BlueApp</string>
+    <string name="no_data_found">Data not found</string>
+    <string name="dummy_book_name">The Hobbit</string>
+    <string name="dummy_book_author">J.R.R. Tolkien</string>
+    <string name="number_of_items">Number Of Items : </string>
+    <string name="search">Search</string>
+    <string name="top_characters">Top Characters :</string>
+    <string name="bullet_symbol"> • </string>
+    <string name="colon_symbol"> : </string>
+</resources>
